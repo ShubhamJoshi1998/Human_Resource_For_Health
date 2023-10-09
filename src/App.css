@@ -36,3 +36,218 @@
     transform: rotate(360deg);
   }
 } */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define the container for the left side */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  /* Adjust the width as needed */
+  height: 100vh;
+  /* 100% of the viewport height */
+  background-color: #333;
+  /* Background color for the left side */
+  color: #fff;
+  /* Text color for the left side */
+  font-family: Arial, sans-serif;
+  /* Choose an appropriate font-family */
+}
+
+/* Style individual containers */
+.box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #444;
+  /* Background color for boxes */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Box shadow for a raised effect */
+  transition: background-color 0.3s ease;
+  /* Smooth transition on hover */
+}
+
+/* Hover effect for containers */
+.box:hover {
+  background-color: #555;
+  /* Darker background on hover */
+  transform: translateY(-2px);
+  /* Slight upward lift on hover */
+}
+
+/* Add some text styling */
+.box h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.box p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.graphContainer {
+  width: 50%;
+  height: 100vh;
+  /* background-color: #f0f0f0;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow-y: auto; */
+
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define overall layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  color: #333;
+  margin: 0 auto; /* Center the layout horizontally */
+  padding: 20px; /* Add spacing around the layout */
+  min-height: 100vh; /* Ensure a minimum height to fill the viewport */
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  /* padding: 20px; */
+}
+
+/* Main content area */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Column styling */
+.column {
+  flex: 1; /* Each column takes up equal width */
+  padding: 2px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Add horizontal spacing between columns */
+}
+
+/* Set column widths */
+.column:nth-child(1) {
+  flex: 12;
+}
+
+.column:nth-child(2) {
+  flex: 30;
+}
+
+.column:nth-child(3),
+.column:nth-child(4) {
+  flex: 29;
+}
+
+/* Style individual containers */
+.container-box {
+  margin-bottom: 10px; /* Add vertical spacing between containers */
+  padding: 13px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce margin between containers in the first column */
+.column:nth-child(1) .container-box {
+  margin-bottom: 10px;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.select-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Style the select container */
+.styled-select {
+  position: relative;
+}
+
+/* Style the label */
+.styled-select label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Style the select element */
+.styled-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Style for split-container (divide into left and right) */
+.split-container {
+  display: flex;
+}
+
+/* Style for left-sub-container and right-sub-container */
+.left-sub-container,
+.right-sub-container {
+  flex: 1; /* Equal width for both left and right containers */
+}
+
+/* Style for left-sub-container-box and right-sub-container-box (smaller containers) */
+.left-sub-container-box,
+.right-sub-container-box {
+  /* padding: 4px; */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style for container-content to control the height of Container 11 */
+.container-content {
+  height: 220px; /* Adjust the height as desired */
+  overflow-y: auto; /* Add a vertical scrollbar if content exceeds the height */
+}
+
+/* // Inside your CSS file or component */
+.chart-container {
+  width: 100%; /* Make the container take up 100% of its parent's width */
+  height: 100%; /* Make the container take up 100% of its parent's height */
+}
