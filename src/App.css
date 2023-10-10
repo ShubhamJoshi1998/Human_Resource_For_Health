@@ -149,26 +149,27 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-right: 20px; /* Add horizontal spacing between columns */
+  margin-right: 5px; /* Add horizontal spacing between columns */
 }
 
 /* Set column widths */
 .column:nth-child(1) {
-  flex: 12;
+  flex: 8;
 }
 
 .column:nth-child(2) {
-  flex: 30;
+  flex: 20;
 }
 
 .column:nth-child(3),
 .column:nth-child(4) {
-  flex: 29;
+  flex: 20;
 }
 
 /* Style individual containers */
 .container-box {
-  margin-bottom: 10px; /* Add vertical spacing between containers */
+  margin-bottom: 8px;
+   /* Add vertical spacing between containers */
   padding: 13px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -178,7 +179,7 @@
 
 /* Reduce margin between containers in the first column */
 .column:nth-child(1) .container-box {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 /* Footer styling */
@@ -248,8 +249,8 @@
 
 /* // Inside your CSS file or component */
 .chart-container {
-  width: 100%; /* Make the container take up 100% of its parent's width */
-  height: 100%; /* Make the container take up 100% of its parent's height */
+  width: 80%; /* Make the container take up 100% of its parent's width */
+  height: 300px; /* Make the container take up 100% of its parent's height */
 }
 
 /* Inside your CSS file */
@@ -259,4 +260,21 @@
 }
 .small-text {
   font-size: 12px; /* Adjust the font size as needed */
+}
+
+.map-container svg {
+  display: inline-block;
+  vertical-align: middle;
+  height: 600px;
+  top: 90px;
+  left: -60px !important;
+}
+
+/* responsive, form small screens, use 13px font size */
+@media (max-width: 1000px) {
+  .map-container svg {
+    display: inline-block;
+    vertical-align: middle;
+    height: 700px;
+  }
 }

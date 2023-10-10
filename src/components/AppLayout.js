@@ -24,7 +24,7 @@ function AppLayout() {
                     <div className="container">
                         <header className="header">
                             {/* Header content goes here */}
-                            <h1>HRH</h1>
+                            <h1>Dashboard</h1>
                         </header>
                         <div className="main-content">
                             <div className="column">

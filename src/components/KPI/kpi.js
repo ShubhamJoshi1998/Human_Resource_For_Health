@@ -22,7 +22,13 @@ const Kpi = () => {
                     <span class="bold-text">SHUBHAM</span>
                 </p>
             </div>
-            <div className="container-box">Container 4</div>
+            <div className="container-box"><p>
+                <span class="small-text">123</span>
+            </p>
+                <p>
+                    <span class="bold-text">SHUBHAM</span>
+                </p>
+            </div>
             <div className="container-box">Container 5</div>
             <div className="container-box">Container 6</div>
             <div className="container-box">Container 7</div>
