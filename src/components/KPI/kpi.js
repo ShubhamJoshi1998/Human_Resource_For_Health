@@ -13,27 +13,50 @@ const Kpi = () => {
                     </select>
                 </div>
             </div>
-            <div className="container-box">INDIA</div>
-            <div className="container-box">
-                <p>
-                    <span class="small-text">123</span>
-                </p>
-                <p>
-                    <span class="bold-text">SHUBHAM</span>
-                </p>
+            <div className="container-box" style={{backgroundColor: "#21639bff"}}>INDIA</div>
+            <div className="container-box" style={{backgroundColor: "#1592a6ff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">13,00,290</span>
+                    <span class="small-text">Regd. Doctors</span>
+                </div>
             </div>
-            <div className="container-box"><p>
-                <span class="small-text">123</span>
-            </p>
-                <p>
-                    <span class="bold-text">SHUBHAM</span>
-                </p>
+            <div className="container-box" style={{backgroundColor: "#cfad2fff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">2,91,271</span>
+                    <span class="small-text">Regd. Dentists</span>
+                </div>
+
             </div>
-            <div className="container-box">Container 5</div>
-            <div className="container-box">Container 6</div>
-            <div className="container-box">Container 7</div>
-            <div className="container-box">Container 8</div>
-            <div className="container-box">Container 9</div>
+            <div className="container-box" style={{backgroundColor: "#25953fff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">7,55,780</span>
+                    <span class="small-text">Regd. Ayush Professionals</span>
+                </div>
+            </div>
+            <div className="container-box" style={{backgroundColor: "#f28e2bff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">35,14,373</span>
+                    <span class="small-text">Nurses (RN&RM, ANM, LHV)</span>
+                </div>
+            </div>
+            <div className="container-box" style={{backgroundColor: "#3d9696ff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">13,34,198</span>
+                    <span class="small-text">Total Pharmacists</span>
+                </div>
+            </div>
+            <div className="container-box" style={{backgroundColor: "#21639bff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">10,47,324</span>
+                    <span class="small-text">Total ASHA Workers</span>
+                </div>
+            </div>
+            <div className="container-box" style={{backgroundColor: "#3cc326ff"}}>
+                <div class="kpi-box">
+                    <span class="bold-text">27.40</span>
+                    <span class="small-text">HRH (Dr. & Nurses) Ratio per 10K popl.</span>
+                </div>
+            </div>
         </>
     )
 }

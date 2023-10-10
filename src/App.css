@@ -168,9 +168,9 @@
 
 /* Style individual containers */
 .container-box {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
    /* Add vertical spacing between containers */
-  padding: 13px;
+  padding: 5px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -249,7 +249,7 @@
 
 /* // Inside your CSS file or component */
 .chart-container {
-  width: 80%; /* Make the container take up 100% of its parent's width */
+  width: 100%; /* Make the container take up 100% of its parent's width */
   height: 235px; /* Make the container take up 100% of its parent's height */
 }
 
@@ -277,4 +277,14 @@
     vertical-align: middle;
     height: 700px;
   }
+}
+
+.kpi-box {
+display: flex;
+flex-direction: column;
+padding : 5px;
+}
+
+.kpi-box span {
+  padding  :2px;
 }

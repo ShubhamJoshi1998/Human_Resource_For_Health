@@ -8,7 +8,7 @@ const Graph1 = () => {
       // Create the chart
       Highcharts.chart('chart-container', {
         chart: {
-          type: 'bar', // Change the chart type as needed (e.g., 'line', 'pie', etc.)
+          type: 'column', // Change the chart type as needed (e.g., 'line', 'pie', etc.)
         },
         title: {
           text: 'Sample Chart Title',
