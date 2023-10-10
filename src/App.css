@@ -243,14 +243,14 @@
 
 /* Style for container-content to control the height of Container 11 */
 .container-content {
-  height: 220px; /* Adjust the height as desired */
+  height: 235px; /* Adjust the height as desired */
   overflow-y: auto; /* Add a vertical scrollbar if content exceeds the height */
 }
 
 /* // Inside your CSS file or component */
 .chart-container {
   width: 80%; /* Make the container take up 100% of its parent's width */
-  height: 300px; /* Make the container take up 100% of its parent's height */
+  height: 235px; /* Make the container take up 100% of its parent's height */
 }
 
 /* Inside your CSS file */
