@@ -251,3 +251,12 @@
   width: 100%; /* Make the container take up 100% of its parent's width */
   height: 100%; /* Make the container take up 100% of its parent's height */
 }
+
+/* Inside your CSS file */
+.bold-text {
+  font-weight: bold;
+  font-size: 15px;
+}
+.small-text {
+  font-size: 12px; /* Adjust the font size as needed */
+}

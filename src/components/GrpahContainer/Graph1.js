@@ -16,6 +16,9 @@ const Graph1 = () => {
         xAxis: {
           categories: ['Category 1', 'Category 2', 'Category 3'],
         },
+        credits: {
+          enabled: false
+        },
         series: [
           {
             name: 'Series Name',

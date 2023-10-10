@@ -1,6 +1,44 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Highcharts from 'highcharts';
 
 const Graph3 = () => {
+
+    const ChartComponent = () => {
+        useEffect(() => {
+          // Create the chart
+          Highcharts.chart('chart-container4', {
+            chart: {
+              type: 'pie', // Change the chart type as needed (e.g., 'line', 'pie', etc.)
+            },
+            title: {
+              text: 'Sample Chart Title',
+            },
+            xAxis: {
+              categories: ['Category 1', 'Category 2', 'Category 3'],
+            },
+            yAxis: {
+              title: {
+                text: 'Y-Axis Label',
+              },
+            },
+            credits: {
+                enabled: false
+            },
+            series: [
+              {
+                name: 'Series Name',
+                data: [5, 10, 15], // Replace with your own data
+              },
+            ],
+          });
+        }, []);
+    
+        return (
+          <div className="chart-container" id="chart-container4">
+            {/* The chart will be rendered here */}
+          </div>
+        );
+      };
     return (
         <div>
             <div className="container-box">
@@ -15,7 +53,7 @@ const Graph3 = () => {
             </div>
             <div className="container-box">
                 <div class="container-content">
-                    Container 14
+                    <ChartComponent />
                 </div>
             </div>
         </div>

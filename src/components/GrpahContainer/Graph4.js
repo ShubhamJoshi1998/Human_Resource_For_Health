@@ -11,7 +11,7 @@ const Graph4 = () => {
   const ChartComponent = () => {
     useEffect(() => {
       // Create the chart
-      Highcharts.chart('chart-container', {
+      Highcharts.chart('chart-container2', {
         chart: {
           type: 'bar', // Change the chart type as needed (e.g., 'line', 'pie', etc.)
         },
@@ -26,6 +26,9 @@ const Graph4 = () => {
             text: 'Y-Axis Label',
           },
         },
+        credits: {
+          enabled: false
+        },
         series: [
           {
             name: 'Series Name',
@@ -36,7 +39,7 @@ const Graph4 = () => {
     }, []);
 
     return (
-      <div className="chart-container" id="chart-container">
+      <div className="chart-container" id="chart-container2">
         {/* The chart will be rendered here */}
       </div>
     );
